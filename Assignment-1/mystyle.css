@@ -1,0 +1,236 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color:#536fec;
+}
+.ahmed-B-profile-pic {
+    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+.ahmed-B-profile-pic:hover{
+    border:1px solid black;
+    border-radius: 20%;
+    width: 200px;
+    height: 200px;
+}
+.ahmed-B-container {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header {
+    background: linear-gradient(to right, #03acca, #74dfad);
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header .ahmed-B-container {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.ahmed-B-container1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+header h1 {
+    margin: 0;
+    align-items: left;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+nav ul li a:hover {
+    color: #160101;
+    font-size:large;
+}
+.ahmed-B-section {
+    padding: 100px 0;
+    text-align: center;
+}
+.ahmed-B-section1 {
+    padding: 100px 0;
+    text-align: left;
+}
+.ahmed-B-heading2{
+    color:#310e58;
+}
+.ahmed-B-about-content {
+    display: flex;
+    flex-direction: row; /* Ensure items are displayed in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    color:#536fec;
+}
+.text-wrapper {
+    width: 50%; /* Set text width to 50% */
+    padding-right: 50px; /* Add some space between text and image */
+    font-size: larger; 
+}
+.image-wrapper {
+    padding:100px;
+    width: 50%; /* Set image width to 50% */
+    padding-left: 20px; /* Add some space between text and image */
+}
+.image-wrapper img {
+    width: 100%; /* Ensure image takes up full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+.ahmed-B-image{
+    height:100%;
+    width:35%;
+}
+.ahmed-B-portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.ahmed-B-portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.ahmed-B-portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ahmed-B-contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ahmed-B-contact-form input,
+.ahmed-B-contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ahmed-B-contact-form button {
+    padding: 10px 20px;
+    background-color: #764ba2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.ahmed-B-contact-form button:hover {
+    background-color: #5f3e86;
+}
+.ahmed-B-info{
+    text-align: left;
+    margin:0% 5%;
+}
+.ahmed-B-experience{
+    padding:10%;
+}
+.ahmed-B-skills {
+    margin-top: 20px;
+    padding:10%;
+}
+
+.ahmed-B-skills h3 {
+    font-size:large;
+    margin-bottom: 10px;
+}
+
+.ahmed-B-skills table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ahmed-B-skills th,
+.ahmed-B-skills td {
+    padding: 10px;
+    border: 2px solid #ddd;
+}
+
+.ahmed-B-skills th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+
+.ahmed-B-skills td {
+    text-align: left;
+}
+.ahmed-B-skills tr:hover {
+    background-color: #f2f2f2;
+}
+.ahmed-B-education{
+    padding:10%;
+}
+footer {
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    header .ahmed-B-container {
+        flex-direction: column; /* Change flex direction to column for mobile */
+        align-items: flex-start; /* Align items to the start for mobile */
+    }
+
+    .text-wrapper,
+    .image-wrapper {
+        width: 100%; /* Set width to 100% for mobile */
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    .image-wrapper {
+        order: -1; /* Move image before text for mobile */
+    }
+
+    .ahmed-B-section,
+    .ahmed-B-section1 {
+        padding: 50px 0; /* Adjust padding for mobile */
+    }
+
+    .ahmed-B-about-content {
+        flex-direction: column; /* Change flex direction to column for mobile */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .ahmed-B-portfolio-grid {
+        grid-template-columns: repeat(1, 1fr); /* Adjust grid columns for mobile */
+    }
+
+    .ahmed-B-contact-form {
+        padding: 0 20px; /* Add padding for mobile */
+    }
+
+    .ahmed-B-skills table {
+        font-size: small; /* Adjust font size for mobile */
+    }
+}
